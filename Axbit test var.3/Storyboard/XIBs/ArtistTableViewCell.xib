@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArtistTableViewCell" rowHeight="43" id="KGk-i7-Jjw" customClass="ArtistTableViewCell" customModule="Axbit_test_var_3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="517" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="517" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleAspectFit" spacing="267" translatesAutoresizingMaskIntoConstraints="NO" id="eWT-s8-Y0X">
+                        <rect key="frame" x="30" y="30" width="457" height="31"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTG-hn-iog">
+                                <rect key="frame" x="0.0" y="0.0" width="141" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VEj-VQ-kBK">
+                                <rect key="frame" x="408" y="0.0" width="51" height="31"/>
+                                <connections>
+                                    <action selector="artistCellButton:" destination="KGk-i7-Jjw" eventType="valueChanged" id="MbQ-Cv-FAG"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eWT-s8-Y0X" secondAttribute="trailing" constant="30" id="aer-4i-QFS"/>
+                    <constraint firstItem="eWT-s8-Y0X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="lna-2Z-1lj"/>
+                    <constraint firstItem="eWT-s8-Y0X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="ly7-C0-oAO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artistCellLabel" destination="jTG-hn-iog" id="RIN-2e-y92"/>
+                <outlet property="artistCellSwitchButton" destination="VEj-VQ-kBK" id="f94-kI-x04"/>
+            </connections>
+            <point key="canvasLocation" x="-10.869565217391305" y="74.665178571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
